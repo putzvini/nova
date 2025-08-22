@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
+  resources :widgets
+  #get 'companies/index'
+  #get 'companies/show'
+  #get 'companies/new'
+  #get 'companies/create'
+  #get 'companies/edit'
+  #get 'companies/update'
+  #get 'companies/destroy'
   devise_for :users
+  resources :companies
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
